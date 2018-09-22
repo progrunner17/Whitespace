@@ -28,12 +28,12 @@ from commands import (
 """
 Whitespace is an esoteric programming language that uses only three characters:
 
-    [space] or " " (ASCII 32)
-    [tab] or "\t" (ASCII 9)
-    [line-feed] or "\n" (ASCII 10)
+    [space] or "–" (UNICODE U+2013)
+    [tab] or "—" (UNICODE U+2014)
+    [line-feed] or "―" (UNICODE U+2015)
 
 """
-chars = {'SPACE': r' ', 'TAB': r'\t', 'LINE_FEED': r'\n'}
+chars = {'SPACE': '–', 'TAB': '—', 'LINE_FEED': '―'}
 comments = r'[^{SPACE}{TAB}{LINE_FEED}]'.format(**chars)
 
 
