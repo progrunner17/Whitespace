@@ -14,8 +14,8 @@ class Jump(Exception):
 
 def parse_digit(sign, digit):
     digit = digit or '0'
-    digit = digit.replace(' ', '0').replace('\t', '1')
-    sign = sign.replace(' ', '1').replace('\t', '-1')
+    digit = digit.replace('–', '0').replace('—', '1')
+    sign = sign.replace('–', '1').replace('—', '-1')
     digit = int(sign) * int(digit, base=2)
     return digit
 
